@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_historico_gastos' nomeSequencia='public.fin_historico_gastos_id_historico_gasto_seq'>
+	<propriedades>
+		<propriedade id='idHistoricoGasto' tipo='numerico' tamanho='4' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_historico_gasto' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='idDespesa' tipo='numerico' tamanho='4' obrigatorio='sim' classeAssociativa='NDespesas' metodoLeitura='lerTodos' descritivo='1'  >
+			<banco nome='id_despesa' >
+				<chaveEstrangeira tabela='public.fin_despesas' campo='id_despesa' />
+			</banco>
+			<apresentacao componente='caixa de combinacao' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='idPagamento' tipo='numerico' tamanho='4' obrigatorio='sim' classeAssociativa='NPagamento' metodoLeitura='lerTodos' descritivo='2'  >
+			<banco nome='id_pagamento' >
+				<chaveEstrangeira tabela='public.fin_pagamentos' campo='id_pagamento' />
+			</banco>
+			<apresentacao componente='caixa de combinacao' >
+				<listagem ordem='3' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dtDespesa' tipo='data' obrigatorio='sim'  >
+			<banco nome='dt_despesa'  />
+			<apresentacao componente='data' >
+				<listagem ordem='4' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dtPagamento' tipo='data'  >
+			<banco nome='dt_pagamento'  />
+			<apresentacao componente='data' >
+				<listagem ordem='6' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dtVencimento' tipo='data'  >
+			<banco nome='dt_vencimento'  />
+			<apresentacao componente='data'  />
+		</propriedade>
+		<propriedade id='vlDespesa' tipo='tmoeda' tamanho='8'  >
+			<banco nome='vl_despesa'  />
+			<apresentacao componente='moeda' >
+				<listagem ordem='5' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='csPago' tipo='tnumerico' tamanho='1'  >
+			<banco nome='cs_pago'  />
+			<apresentacao componente='marcador' >
+				<listagem ordem='7' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>

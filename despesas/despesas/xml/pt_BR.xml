@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<internacionalizacao>
+	<entidade>
+		<nome>Despesas</nome>
+		<propriedades>
+		<propriedade nome='idDespesa'>
+			<nome>Identificador</nome>
+			<abreviacao>Identificador</abreviacao>
+			<descricao>Identificador da Despesa</descricao>
+		</propriedade>
+		<propriedade nome='idCategoriaDespesa'>
+			<nome>Categoria Despesa</nome>
+			<abreviacao>Categoria Despesa</abreviacao>
+			<descricao>Identificador da Categoria da Despesa</descricao>
+		</propriedade>
+		<propriedade nome='nmDespesa'>
+			<nome>Nome Despesa</nome>
+			<abreviacao>Nome da Despesa</abreviacao>
+			<descricao>Nome da Despesa</descricao>
+		</propriedade>
+		<propriedade nome='dsDespesa'>
+			<nome>Descrição Despesa</nome>
+			<abreviacao>Descrição Despesa</abreviacao>
+			<descricao>Descrição da Despesa</descricao>
+		</propriedade>
+		</propriedades>
+	</entidade>
+	<controles>
+		<titulo>Cadastro de Despesas</titulo>
+	</controles>
+</internacionalizacao>

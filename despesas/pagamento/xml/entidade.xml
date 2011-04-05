@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_pagamentos' nomeSequencia='public.fin_pagamentos_id_pagamento_seq'>
+	<propriedades>
+		<propriedade id='idPagamento' tipo='numerico' tamanho='4' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_pagamento' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='idFormaPagamento' tipo='numerico' tamanho='4' classeAssociativa='NFormasPagamento' metodoLeitura='lerTodos' descritivo='1'  >
+			<banco nome='id_forma_pagamento' >
+				<chaveEstrangeira tabela='public.fin_formas_pagamento' campo='id_forma_pagamento' />
+			</banco>
+			<apresentacao componente='caixa de combinacao' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='idOrigemCredito' tipo='numerico' tamanho='4' classeAssociativa='NOrigemCredito' metodoLeitura='lerTodos' descritivo='2'  >
+			<banco nome='id_origem_credito' >
+				<chaveEstrangeira tabela='public.fin_origens_credito' campo='id_origem_credito' />
+			</banco>
+			<apresentacao componente='caixa de combinacao' >
+				<listagem ordem='3' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>
