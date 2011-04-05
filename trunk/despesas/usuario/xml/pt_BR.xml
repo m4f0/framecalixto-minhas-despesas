@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<internacionalizacao>
+	<entidade>
+		<nome>Usuário</nome>
+		<propriedades>
+		<propriedade nome='idUsuario'>
+			<nome>Código</nome>
+			<abreviacao>Cód.</abreviacao>
+			<descricao>Informe o código</descricao>
+		</propriedade>
+		<propriedade nome='idPessoa'>
+			<nome>Pessoa</nome>
+			<abreviacao>Pessoa</abreviacao>
+			<descricao>Informe a pessoa responsável</descricao>
+		</propriedade>
+		<propriedade nome='nmLogin'>
+			<nome>Login</nome>
+			<abreviacao>Login</abreviacao>
+			<descricao>Informe o Login</descricao>
+		</propriedade>
+		<propriedade nome='nmSenha'>
+			<nome>Senha</nome>
+			<abreviacao>Senha</abreviacao>
+			<descricao>Informe a senha</descricao>
+		</propriedade>
+		</propriedades>
+	</entidade>
+	<controles>
+		<titulo>Usuários</titulo>
+	</controles>
+</internacionalizacao>

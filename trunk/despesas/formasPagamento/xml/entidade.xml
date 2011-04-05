@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_formas_pagamento' nomeSequencia='public.fin_formas_pagamento_id_forma_pagamento_seq'>
+	<propriedades>
+		<propriedade id='idFormaPagamento' tipo='numerico' tamanho='4' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_forma_pagamento' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='nmFormaPagamento' tipo='texto' tamanho='100' obrigatorio='sim' descritivo='1'  >
+			<banco nome='nm_forma_pagamento'  />
+			<apresentacao componente='caixa de entrada' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>

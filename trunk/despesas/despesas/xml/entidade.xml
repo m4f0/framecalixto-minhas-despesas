@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_despesas' nomeSequencia='public.fin_despesas_id_despesa_seq'>
+	<propriedades>
+		<propriedade id='idDespesa' tipo='numerico' tamanho='4' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_despesa' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='idCategoriaDespesa' tipo='numerico' tamanho='4' obrigatorio='sim' classeAssociativa='NCategoriaDespesa' metodoLeitura='lerTodos' descritivo='1'  >
+			<banco nome='id_categoria_despesa' >
+				<chaveEstrangeira tabela='public.fin_categorias_despesas' campo='id_categoria_despesa' />
+			</banco>
+			<apresentacao componente='caixa de combinacao' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='nmDespesa' tipo='texto' tamanho='50' obrigatorio='sim' descritivo='2'  >
+			<banco nome='nm_despesa'  />
+			<apresentacao componente='caixa de entrada' >
+				<listagem ordem='3' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dsDespesa' tipo='texto' tamanho='-5' descritivo='3'  >
+			<banco nome='ds_despesa'  />
+			<apresentacao componente='caixa de entrada' >
+				<listagem ordem='4' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>

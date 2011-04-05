@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<internacionalizacao>
+	<entidade>
+		<nome>Historico Gastos</nome>
+		<propriedades>
+		<propriedade nome='idHistoricoGasto'>
+			<nome>Identificador</nome>
+			<abreviacao>Identificador</abreviacao>
+			<descricao>Identificador do Gasto</descricao>
+		</propriedade>
+		<propriedade nome='idDespesa'>
+			<nome>Despesa</nome>
+			<abreviacao>Despesa</abreviacao>
+			<descricao>Identificador da Despesa</descricao>
+		</propriedade>
+		<propriedade nome='idPagamento'>
+			<nome>Pagamento</nome>
+			<abreviacao>Pagamento</abreviacao>
+			<descricao>Identificador do Pagamento</descricao>
+		</propriedade>
+		<propriedade nome='dtDespesa'>
+			<nome>Data Despesa</nome>
+			<abreviacao>Data Despesa</abreviacao>
+			<descricao>Data do Gasto</descricao>
+		</propriedade>
+		<propriedade nome='dtPagamento'>
+			<nome>Data Pagamento</nome>
+			<abreviacao>Data Pagamento</abreviacao>
+			<descricao>Data do Pagamento</descricao>
+		</propriedade>
+		<propriedade nome='dtVencimento'>
+			<nome>Data Vencimento</nome>
+			<abreviacao>Data Vencimento</abreviacao>
+			<descricao>Data do Vencimento</descricao>
+		</propriedade>
+		<propriedade nome='vlDespesa'>
+			<nome>Valor Despesa</nome>
+			<abreviacao>Valor Despesa</abreviacao>
+			<descricao>Valor da Despesa Feita</descricao>
+		</propriedade>
+		<propriedade nome='csPago'>
+			<nome>Pago</nome>
+			<abreviacao>Pago</abreviacao>
+			<descricao>Foi Pago</descricao>
+		</propriedade>
+		</propriedades>
+	</entidade>
+	<controles>
+		<titulo>Cadastro de Historico Gastos</titulo>
+	</controles>
+</internacionalizacao>

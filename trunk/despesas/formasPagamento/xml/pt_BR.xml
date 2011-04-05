@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<internacionalizacao>
+	<entidade>
+		<nome>Formas Pagamento</nome>
+		<propriedades>
+		<propriedade nome='idFormaPagamento'>
+			<nome>Identificador</nome>
+			<abreviacao>Identificador</abreviacao>
+			<descricao>Identificador da Forma de Pagamento</descricao>
+		</propriedade>
+		<propriedade nome='nmFormaPagamento'>
+			<nome>Nome da Forma Pagamento</nome>
+			<abreviacao>Forma Pagamento</abreviacao>
+			<descricao>Noma da Forma de Pagamento</descricao>
+		</propriedade>
+		</propriedades>
+	</entidade>
+	<controles>
+		<titulo>Cadastro de Formas Pagamento</titulo>
+	</controles>
+</internacionalizacao>
