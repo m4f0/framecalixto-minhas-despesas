@@ -43,7 +43,7 @@ class NHistoricoGastos extends negocioPadrao{
 	public $vlDespesa;
 	/**
 	* @gerador variavelPadrao
-	* @var TNumerico Pago
+	* @var integer Pago
 	*/
 	public $csPago;
 	/**

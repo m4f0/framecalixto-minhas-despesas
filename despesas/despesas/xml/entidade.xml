@@ -21,7 +21,7 @@
 				<listagem ordem='3' tamanho='%' />
 			</apresentacao>
 		</propriedade>
-		<propriedade id='dsDespesa' tipo='texto' tamanho='-5' descritivo='3'  >
+		<propriedade id='dsDespesa' tipo='texto' tamanho='100' descritivo='3'  >
 			<banco nome='ds_despesa'  />
 			<apresentacao componente='caixa de entrada' >
 				<listagem ordem='4' tamanho='%' />
