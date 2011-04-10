@@ -1,0 +1,4 @@
+despesas
+nbproject
+remsvn
+teste.txt
