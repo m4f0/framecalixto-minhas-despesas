@@ -1,4 +1,0 @@
-despesas
-nbproject
-remsvn
-sbcvghdcvvcdhjvchjdvchvdhjcvhjdvcjdvteste.txt
