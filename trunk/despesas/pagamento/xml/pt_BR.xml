@@ -10,12 +10,12 @@
 		</propriedade>
 		<propriedade nome='idFormaPagamento'>
 			<nome>Forma Pagamento</nome>
-			<abreviacao>Id Forma Pagamento</abreviacao>
+			<abreviacao>Forma Pagamento</abreviacao>
 			<descricao>Identificador da Forma de Pagamento</descricao>
 		</propriedade>
 		<propriedade nome='idOrigemCredito'>
 			<nome>Origem Credito</nome>
-			<abreviacao>Id Origem Credito</abreviacao>
+			<abreviacao>Origem Credito</abreviacao>
 			<descricao>Identificador da Origem do Crédito</descricao>
 		</propriedade>
 		</propriedades>

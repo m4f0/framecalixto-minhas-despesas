@@ -45,9 +45,13 @@
 				<listagem ordem='5' tamanho='%' />
 			</apresentacao>
 		</propriedade>
-		<propriedade id='csPago' tipo='tnumerico' tamanho='1'  >
+		<propriedade id='csPago' tipo='numerico' tamanho='1'  >
+			<dominio>
+				<opcao id='1' />
+				<opcao id='0' />
+			</dominio>
 			<banco nome='cs_pago'  />
-			<apresentacao componente='marcador' >
+			<apresentacao componente='caixa de combinacao' >
 				<listagem ordem='7' tamanho='%' />
 			</apresentacao>
 		</propriedade>

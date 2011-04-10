@@ -42,6 +42,10 @@
 			<nome>Pago</nome>
 			<abreviacao>Pago</abreviacao>
 			<descricao>Foi Pago</descricao>
+			<dominio>
+				<opcao id='1'>Sim</opcao>
+				<opcao id='0'>Não</opcao>
+			</dominio>
 		</propriedade>
 		</propriedades>
 	</entidade>
