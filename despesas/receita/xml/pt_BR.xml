@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<internacionalizacao>
+	<entidade>
+		<nome>Receita</nome>
+		<propriedades>
+		<propriedade nome='idReceita'>
+			<nome>Identificador</nome>
+			<abreviacao>Identificador</abreviacao>
+			<descricao>Identificador da Fonte de Receita</descricao>
+		</propriedade>
+		<propriedade nome='nmReceita'>
+			<nome>Nome</nome>
+			<abreviacao>Nome</abreviacao>
+			<descricao>Nome do Contratante</descricao>
+		</propriedade>
+		<propriedade nome='dsReceita'>
+			<nome>Descrição</nome>
+			<abreviacao>Descrição</abreviacao>
+			<descricao>Descrição do Tipo de Serviço</descricao>
+		</propriedade>
+		<propriedade nome='vlDespesa'>
+			<nome>Valor</nome>
+			<abreviacao>Valor</abreviacao>
+			<descricao>Valor da Receita</descricao>
+		</propriedade>
+		<propriedade nome='dtInicioReceita'>
+			<nome>Data Inicio Renda</nome>
+			<abreviacao>Data Inicio Renda</abreviacao>
+			<descricao>Data de Inicio da Renda</descricao>
+		</propriedade>
+		<propriedade nome='dtFimReceita'>
+			<nome>Data Fim Renda</nome>
+			<abreviacao>Data Fim Renda</abreviacao>
+			<descricao>Data de Fim da Renda</descricao>
+		</propriedade>
+		</propriedades>
+	</entidade>
+	<controles>
+		<titulo>Cadastro de Receita</titulo>
+	</controles>
+</internacionalizacao>

@@ -1,19 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <internacionalizacao>
 	<entidade>
-		<nome>Pagamento</nome>
+		<nome>Destino Pagamento</nome>
 		<propriedades>
-		<propriedade nome='idPagamento'>
+		<propriedade nome='idDestinoPagamento'>
 			<nome>Identificador</nome>
 			<abreviacao>Identificador</abreviacao>
-			<descricao>Pagamento</descricao>
+			<descricao>Identificador do Destino do Pagamento</descricao>
 		</propriedade>
-		<propriedade nome='idFormaPagamento'>
-			<nome>Forma Pagamento</nome>
-			<abreviacao>Forma Pagamento</abreviacao>
-			<descricao>Forma de Pagamento</descricao>
-		</propriedade>
-		<propriedade nome='idDestinoPagamento'>
+		<propriedade nome='nmDestinoPagamento'>
 			<nome>Destino Pagamento</nome>
 			<abreviacao>Destino Pagamento</abreviacao>
 			<descricao>Destino do Pagamento</descricao>
@@ -21,6 +16,6 @@
 		</propriedades>
 	</entidade>
 	<controles>
-		<titulo>Cadastro de Pagamento</titulo>
+		<titulo>Cadastro de Destino Pagamento</titulo>
 	</controles>
 </internacionalizacao>

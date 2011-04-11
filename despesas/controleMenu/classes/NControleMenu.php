@@ -89,7 +89,19 @@ class NControleMenu extends negocio{
 			
 			$this->adicionarItem('menuPrincipal','Sistema/Página Principal','CControleAcesso_verPrincipal','.sistema/icones/monitor.png',true);
 			$this->adicionarItem('menuPrincipal',"Sistema/{$nmLoginLabel}",'CControleAcesso_verLogin',".sistema/icones/{$nmLoginImagem}",true);
-			
+
+                        $this->menuPrincipal->{'Cadastros'}->passar_imagem('.sistema/icones/server.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Formas de Pagamento','CFormasPagamento_verPesquisa','.sistema/icones/group.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Categoria da Despesa','CCategoriaDespesa_verPesquisa','.sistema/icones/group.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Despesas','CDespesas_verPesquisa','.sistema/icones/group.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Receita Mensal','CReceita_verPesquisa','.sistema/icones/group.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Destinos do Pagamento','CDestinoPagamento_verPesquisa','.sistema/icones/group.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Pagamentos','CPagamento_verPesquisa','.sistema/icones/group.png');
+                        $this->adicionarItem('menuPrincipal','Cadastros/Previsão de Gastos','CPrevisaoGastos_verPesquisa','.sistema/icones/group.png');
+
+                        $this->menuPrincipal->{'Movimentações'}->passar_imagem('.sistema/icones/server.png');
+                        $this->adicionarItem('menuPrincipal','Movimentações/Finanças','CHistoricoGastos_verPesquisa','.sistema/icones/group.png');
+
 			$this->menuPrincipal->{'Administração'}->passar_imagem('.sistema/icones/server.png');
 			
 			$this->adicionarItem('menuPrincipal','Administração/Estados','CEstado_verPesquisa','.sistema/icones/group.png');

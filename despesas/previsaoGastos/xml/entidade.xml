@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_previsao_gastos' nomeSequencia='public.fin_previsao_gastos_id_previsao_gasto_seq'>
+	<propriedades>
+		<propriedade id='idPrevisaoGasto' tipo='numerico' tamanho='8' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_previsao_gasto' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='idDespesa' tipo='numerico' tamanho='8' classeAssociativa='NDespesas' metodoLeitura='lerTodos' descritivo='1'  >
+			<banco nome='id_despesa' >
+				<chaveEstrangeira tabela='public.fin_despesas' campo='id_despesa' />
+			</banco>
+			<apresentacao componente='caixa de combinacao' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='vlPrevisto' tipo='tmoeda' tamanho='8' descritivo='2'  >
+			<banco nome='vl_previsto'  />
+			<apresentacao componente='numerico' >
+				<listagem ordem='3' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dtMesAnoReferencia' tipo='data'  >
+			<banco nome='dt_mes_ano_referencia'  />
+			<apresentacao componente='data' >
+				<listagem ordem='4' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>

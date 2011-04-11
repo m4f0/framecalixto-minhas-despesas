@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_receitas' nomeSequencia='public.fin_receitas_id_receita_seq'>
+	<propriedades>
+		<propriedade id='idReceita' tipo='numerico' tamanho='20' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_receita' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='nmReceita' tipo='texto' tamanho='40' obrigatorio='sim'  >
+			<banco nome='nm_receita'  />
+			<apresentacao componente='caixa de entrada' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dsReceita' tipo='texto' tamanho='1000' obrigatorio='sim' descritivo='1'  >
+			<banco nome='ds_receita'  />
+			<apresentacao componente='caixa de entrada'  />
+		</propriedade>
+		<propriedade id='vlDespesa' tipo='tmoeda' tamanho='8' obrigatorio='sim' descritivo='2'  >
+			<banco nome='vl_despesa'  />
+			<apresentacao componente='numerico' >
+				<listagem ordem='3' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dtInicioReceita' tipo='data' obrigatorio='sim'  >
+			<banco nome='dt_inicio_receita'  />
+			<apresentacao componente='data' >
+				<listagem ordem='4' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='dtFimReceita' tipo='data'  >
+			<banco nome='dt_fim_receita'  />
+			<apresentacao componente='data' >
+				<listagem ordem='5' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<internacionalizacao>
+	<entidade>
+		<nome>Previsão Gastos</nome>
+		<propriedades>
+		<propriedade nome='idPrevisaoGasto'>
+			<nome>Identificador</nome>
+			<abreviacao>Identificador</abreviacao>
+			<descricao>Identificador da Previsão de Gastos</descricao>
+		</propriedade>
+		<propriedade nome='idDespesa'>
+			<nome>Despesa</nome>
+			<abreviacao>Despesa</abreviacao>
+			<descricao>Identificador da Despesa</descricao>
+		</propriedade>
+		<propriedade nome='vlPrevisto'>
+			<nome>Valor Previsto</nome>
+			<abreviacao>Valor Previsto</abreviacao>
+			<descricao>Valor Previsto</descricao>
+		</propriedade>
+		<propriedade nome='dtMesAnoReferencia'>
+			<nome>Mes Ano Referência</nome>
+			<abreviacao>Mes Ano Referência</abreviacao>
+			<descricao>Mes Ano Referência</descricao>
+		</propriedade>
+		</propriedades>
+	</entidade>
+	<controles>
+		<titulo>Cadastro de Previsão Gastos</titulo>
+	</controles>
+</internacionalizacao>
