@@ -15,7 +15,7 @@
 		</propriedade>
 		<propriedade id='dsReceita' tipo='texto' tamanho='1000' obrigatorio='sim' descritivo='1'  >
 			<banco nome='ds_receita'  />
-			<apresentacao componente='caixa de entrada'  />
+			<apresentacao componente='caixa de texto'  />
 		</propriedade>
 		<propriedade id='vlDespesa' tipo='tmoeda' tamanho='8' obrigatorio='sim' descritivo='2'  >
 			<banco nome='vl_despesa'  />
