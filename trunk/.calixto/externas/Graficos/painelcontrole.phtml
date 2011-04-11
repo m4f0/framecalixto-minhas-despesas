@@ -1,0 +1,106 @@
+<script type="text/javascript">
+        //Criação do Grafico de Tipo de Programa
+        var stPathGraficoColunas3D = "<?php  echo $this->baseUrl; ?>/publico/charts/FCF_Column3D.swf";
+        var stPathGraficoLine = "<?php  echo $this->baseUrl; ?>/publico/charts/FCF_Line.swf";
+        var stPathGraficoPie2D = "<?php  echo $this->baseUrl; ?>/publico/charts/FCF_Pie2D.swf";
+        var stPathGraficoPie3D = "<?php  echo $this->baseUrl; ?>/publico/charts/FCF_Pie3D.swf";
+
+        function criarGraficoTipoProcesso(stPathGraficoColunas3D){
+        	var chart_tipoProcesso = new FusionCharts(stPathGraficoColunas3D, "tipoProcessoDiv",  "700", "450", "0", "1");
+    		chart_tipoProcesso.setTransparent( true );
+    		//Cria o grafico a partir do controller.
+    		chart_tipoProcesso.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/tipoprocesso");
+    		chart_tipoProcesso.render("tipoProcessoDiv");
+        }      
+
+        function criarGraficoSituacaoProcesso(stPathGraficoColunas3D) {
+                var chart_situacaoProcesso = new FusionCharts(stPathGraficoColunas3D, "situacaoProcessoDiv",  "700", "450", "0", "1");
+                chart_situacaoProcesso.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_situacaoProcesso.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/situacaoprocesso");
+                chart_situacaoProcesso.render("situacaoProcessoDiv");
+
+        }
+
+        function criarGraficoTipoPrograma(stPathGraficoColunas3D) {
+                var chart_tipoPrograma = new FusionCharts(stPathGraficoColunas3D, "tipoProgramaDiv",  "700", "450", "0", "1");
+                chart_tipoPrograma.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_tipoPrograma.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/tipoprograma");
+                chart_tipoPrograma.render("tipoProgramaDiv");
+        }
+
+        function criarGraficoResidentesAtivosPorPeriodo(stPathGraficoColunas3D){
+                var chart_residentesAtivosPorPeriodo = new FusionCharts(stPathGraficoColunas3D, "residentesAtivosPorPeriodoDiv",  "700", "450", "0", "1");
+                chart_residentesAtivosPorPeriodo.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_residentesAtivosPorPeriodo.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/residentesAtivosPorPeriodo");
+                chart_residentesAtivosPorPeriodo.render("residentesAtivosPorPeriodoDiv");
+        }
+
+        function criarGraficoResidentesPorfSituacao(stPathGraficoColunas3D){
+                var chart_residentesPorSituacao = new FusionCharts(stPathGraficoColunas3D, "residentesPorSituacaoDiv",  "700", "450", "0", "1");
+                chart_residentesPorSituacao.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_residentesPorSituacao.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/residentesPorSituacao");
+                chart_residentesPorSituacao.render("residentesPorSituacaoDiv");
+        }
+
+        function criarGraficoInstituicaoPorUf(stPathGraficoColunas3D){
+                var chart_instituicaoPorUF = new FusionCharts(stPathGraficoColunas3D, "instituicaoPorUFDiv",  "800", "450", "0", "1");
+                chart_instituicaoPorUF.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_instituicaoPorUF.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/instituicaoPorUF");
+                chart_instituicaoPorUF.render("instituicaoPorUFDiv");
+        }
+
+        function criarGraficoPcpPorUf(stPathGraficoColunas3D){
+                var chart_pcpPorUF = new FusionCharts(stPathGraficoColunas3D, "pcpPorUFDiv",  "800", "450", "0", "1");
+                chart_pcpPorUF.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_pcpPorUF.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/pcpPorUF");
+                chart_pcpPorUF.render("pcpPorUFDiv");
+        }
+
+//        function criarGraficoPercentualPcpPorUf(stPathGraficoColunas3D){
+//                var chart_percentualPcpPorUF = new FusionCharts(stPathGraficoColunas3D, "percentualPcpPorUFDiv",  "800", "450", "0", "1");
+//                chart_percentualPcpPorUF.setTransparent( true );
+//                //Cria o grafico a partir do controller.
+//                chart_percentualPcpPorUF.setDataURL("<?php  //echo $this->baseUrl; ?>/inicial/xml/parametro/percentualPcpPorUF");
+//                chart_percentualPcpPorUF.render("percentualPcpPorUFDiv");
+//        }
+        function criarGraficoPercentualPcpPorUf(stPathGraficoPie3D){
+                var chart_percentualPcpPorUF = new FusionCharts(stPathGraficoPie3D, "percentualPcpPorUFDiv",  "800", "450", "0", "1");
+                chart_percentualPcpPorUF.setTransparent( true );
+                //Cria o grafico a partir do controller.
+                chart_percentualPcpPorUF.setDataURL("<?php  echo $this->baseUrl; ?>/inicial/xml/parametro/percentualPcpPorUF");
+                chart_percentualPcpPorUF.render("percentualPcpPorUFDiv");
+        }
+
+        /*Criação de Todos os gráficos do Painel de Controle*/
+        this.criarGraficoPcpPorUf(this.stPathGraficoColunas3D);
+        //this.criarGraficoPercentualPcpPorUf(this.stPathGraficoColunas3D);
+        this.criarGraficoPercentualPcpPorUf(this.stPathGraficoPie3D);
+        this.criarGraficoTipoProcesso(this.stPathGraficoColunas3D);
+        this.criarGraficoSituacaoProcesso(this.stPathGraficoColunas3D);
+        this.criarGraficoTipoPrograma(this.stPathGraficoColunas3D);
+        this.criarGraficoResidentesAtivosPorPeriodo(this.stPathGraficoColunas3D);
+        this.criarGraficoResidentesPorfSituacao(this.stPathGraficoColunas3D);
+        this.criarGraficoInstituicaoPorUf(this.stPathGraficoColunas3D);        
+		
+</script>
+
+<form id="painelControle_Form">
+	<?php echo $this->imprimeMsg()?>
+        <div id="pcpPorUFDiv" align="center"></div>
+        <div id="percentualPcpPorUFDiv" align="center"></div>
+        <div id="tipoProcessoDiv" align="center"></div>
+        <div id="situacaoProcessoDiv" align="center"></div>
+        <div id="tipoProgramaDiv" align="center"></div>
+        <div id="residentesAtivosPorPeriodoDiv" align="center"></div>
+        <div id="residentesPorSituacaoDiv" align="center"></div>
+        <div id="instituicaoPorUFDiv" align="center"></div>        
+</form>
+<script type="text/javascript">
+    <?php echo $this->incluiJs()?>
+</script>

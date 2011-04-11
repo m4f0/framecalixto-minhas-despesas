@@ -90,17 +90,23 @@ class NControleMenu extends negocio{
 			$this->adicionarItem('menuPrincipal','Sistema/Página Principal','CControleAcesso_verPrincipal','.sistema/icones/monitor.png',true);
 			$this->adicionarItem('menuPrincipal',"Sistema/{$nmLoginLabel}",'CControleAcesso_verLogin',".sistema/icones/{$nmLoginImagem}",true);
 
-                        $this->menuPrincipal->{'Cadastros'}->passar_imagem('.sistema/icones/server.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Formas de Pagamento','CFormasPagamento_verPesquisa','.sistema/icones/group.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Categoria da Despesa','CCategoriaDespesa_verPesquisa','.sistema/icones/group.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Despesas','CDespesas_verPesquisa','.sistema/icones/group.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Receita Mensal','CReceita_verPesquisa','.sistema/icones/group.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Destinos do Pagamento','CDestinoPagamento_verPesquisa','.sistema/icones/group.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Pagamentos','CPagamento_verPesquisa','.sistema/icones/group.png');
-                        $this->adicionarItem('menuPrincipal','Cadastros/Previsão de Gastos','CPrevisaoGastos_verPesquisa','.sistema/icones/group.png');
+            $this->menuPrincipal->{'Cadastros'}->passar_imagem('.sistema/icones/application_form.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Formas de Pagamento','CFormasPagamento_verPesquisa','.sistema/icones/script_palette.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Categoria da Despesa','CCategoriaDespesa_verPesquisa','.sistema/icones/rss_go.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Despesas','CDespesas_verPesquisa','.sistema/icones/money_dollar.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Receita Mensal','CReceita_verPesquisa','.sistema/icones/money_add.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Destinos do Pagamento','CDestinoPagamento_verPesquisa','.sistema/icones/money_delete.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Pagamentos','CPagamento_verPesquisa','.sistema/icones/money.png');
+            $this->adicionarItem('menuPrincipal','Cadastros/Previsão de Gastos','CPrevisaoGastos_verPesquisa','.sistema/icones/group_gear.png');
 
-                        $this->menuPrincipal->{'Movimentações'}->passar_imagem('.sistema/icones/server.png');
-                        $this->adicionarItem('menuPrincipal','Movimentações/Finanças','CHistoricoGastos_verPesquisa','.sistema/icones/group.png');
+            $this->menuPrincipal->{'Movimentações'}->passar_imagem('.sistema/icones/application_home.png');
+            $this->adicionarItem('menuPrincipal','Movimentações/Finanças','CHistoricoGastos_verPesquisa','.sistema/icones/money.png');
+
+            $this->menuPrincipal->{'Relatórios'}->passar_imagem('.sistema/icones/table_multiple.png');
+            $this->adicionarItem('menuPrincipal','Relatórios/Despesas por Categoria','CHistoricoGastos_verPesquisa','.sistema/icones/report.png');
+
+            $this->menuPrincipal->{'Gráficos'}->passar_imagem('.sistema/icones/chart_organisation.png');
+            $this->adicionarItem('menuPrincipal','Gráficos/Despesas por Categoria','CHistoricoGastos_verPesquisa','.sistema/icones/chart_bar.png');
 
 			$this->menuPrincipal->{'Administração'}->passar_imagem('.sistema/icones/server.png');
 			
