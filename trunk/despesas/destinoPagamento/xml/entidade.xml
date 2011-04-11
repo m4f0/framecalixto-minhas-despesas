@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<entidade  nomeBanco='public.fin_destino_pagamento' nomeSequencia='public.fin_destino_pagamento_id_destino_pagamento_seq'>
+	<propriedades>
+		<propriedade id='idDestinoPagamento' tipo='numerico' tamanho='20' obrigatorio='sim' indicePrimario='sim'  >
+			<banco nome='id_destino_pagamento' ordem='1'  />
+			<apresentacao componente='oculto' >
+				<listagem ordem='1' tamanho='10%' />
+			</apresentacao>
+		</propriedade>
+		<propriedade id='nmDestinoPagamento' tipo='texto' tamanho='100' obrigatorio='sim' descritivo='1'  >
+			<banco nome='nm_destino_pagamento'  />
+			<apresentacao componente='caixa de entrada' >
+				<listagem ordem='2' tamanho='%' />
+			</apresentacao>
+		</propriedade>
+	</propriedades>
+</entidade>

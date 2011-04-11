@@ -18,9 +18,9 @@ class NPagamento extends negocioPadrao{
 	public $idFormaPagamento;
 	/**
 	* @gerador variavelPadrao
-	* @var integer Origem Credito
+	* @var integer Destino Pagamento
 	*/
-	public $idOrigemCredito;
+	public $idDestinoPagamento;
 	/**
 	* Retorna o nome da propriedade que contém o valor chave de negócio
 	* @gerador metodoPadrao
